@@ -1,3 +1,3 @@
-export function hanler() {
+export function handler() {
   console.log(arguments)
 }

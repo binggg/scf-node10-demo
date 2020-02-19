@@ -1,3 +1,4 @@
 {
-    "rdhelper.cas.status": "tempclose"
+    "rdhelper.cas.status": "open",
+    "rdhelper.cas.lastupdatefile": "script/deploy.js"
 }

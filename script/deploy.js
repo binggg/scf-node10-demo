@@ -19,7 +19,7 @@ let client = new ScfClient(cred, Region, clientProfile)
 let req = new models.CreateFunctionRequest()
 
 let params = JSON.stringify({
-  FunctionName: 'scf-node10-test',
+  FunctionName: 'scf-node10-test-0',
   Code: {
     GitUrl,
     GitBranch: 'master',

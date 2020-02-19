@@ -19,14 +19,16 @@ let client = new ScfClient(cred, Region, clientProfile)
 let req = new models.CreateFunctionRequest()
 
 let params = JSON.stringify({
-  FunctionName: 'scf-node10-test-0',
+  FunctionName: 'scf-node10-test-1',
   Code: {
-    GitUrl,
-    GitBranch: 'master',
-    GitDirectory: 'src'
+    ZipFile: 'https://github.com/binggg/scf-node10-demo/raw/master/function.zip'
+    // GitUrl,
+    // GitBranch: 'master',
+    // GitDirectory: 'src'
   },
   Runtime: 'Nodejs10.15',
-  CodeSource: 'Git',
+  // CodeSource: 'Git',
+  CodeSource: 'ZipFile',
   Handler: 'index.main_handler',
   Description: 'SCF Node 10 测试函数'
 })
